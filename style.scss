@@ -1,0 +1,168 @@
+$ww-logo-lg: 200px;
+$ww-logo-sm: 183px;
+$ratio: 5.02052786; //2.44571429 //5.02052786
+$argentine-blue: #48ACF0;
+$penn-blue: #001457;
+$layout-breakpoint-small: 768px;
+
+html { font-size: 16px; }
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.4;
+}
+
+.ww-header {
+    text-align: center;
+    padding: 1rem 0 0;
+    .ww-site-logo {
+        display: inline-block;
+        margin: 0 auto;
+        a {
+            display: block;
+            text-indent: -999999px;
+            width: $ww-logo-lg;
+            // max-width: 200px;
+            height: calc(round($ww-logo-lg / $ratio));
+            background: url('/images/radon-logo.svg')no-repeat;
+        }
+    }
+    .ww-main-nav {
+        ul {
+            margin: .75rem 0 0;
+            padding: 0;
+
+            li {
+                display: inline;
+
+                a {
+                    font-family: "Roboto Condensed", sans-serif;
+                    display: inline-block;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    padding: 1rem;
+                    text-decoration: none;
+                    color: $penn-blue;
+                    border-bottom: 3px solid rgba($argentine-blue, 0);
+
+                    &:hover {
+                        border-bottom: 3px solid rgba($argentine-blue, 1);
+                    }
+                }
+            }
+
+            .ww-home {
+                &::before {
+                    content: '';
+                    display: inline-block;
+                    width: 14px;
+                    height: 14px;
+                    vertical-align: middle;
+                    margin-right: 4px;
+                    margin-top: -4px;
+                    background: url('/images/house-chimney-solid.svg') no-repeat;
+                }
+            }
+        }
+    }
+}
+
+.ww-main {
+    border-top: 1px solid #e1e1e1;
+    padding: 1rem 0;
+}
+
+.ww-footer {
+    background: $penn-blue;
+    color: #fff;
+
+    .ww-container {
+        padding: 3rem 1rem;
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+
+        li {
+            padding-bottom: .5rem;
+
+            a {
+                font-family: "Roboto Condensed", sans-serif;
+                font-weight: 500;
+            }
+        }
+    }
+
+    h4 {
+        font-family: "Roboto Condensed", sans-serif;
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+
+    a {
+        color: $argentine-blue;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    
+    .ww-site-logo {
+        display: inline-block;
+        margin: 0 auto;
+        a {
+            display: block;
+            text-indent: -999999px;
+            width: $ww-logo-sm;
+            // max-width: 200px;
+            height: calc(round($ww-logo-sm / $ratio));
+            background: url('/images/radon-logo-white.svg') no-repeat;
+        }
+    }
+
+    @media (min-width: $layout-breakpoint-small) {
+        .ww-container {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    
+}
+
+.ww-container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 1rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.ww-social {
+    padding: 0;
+    margin: 0;
+
+    li {
+        display: inline-block;
+
+        a {
+            display: inline-block;
+            margin-right: .25rem;
+            &:hover {
+                opacity: .5;
+            }
+
+            img {
+                vertical-align: middle;
+            }
+        }
+    }
+}
