@@ -24,7 +24,7 @@ body {
   text-indent: -999999px;
   width: 200px;
   height: 40px;
-  background: url("/images/radon-logo.svg") no-repeat;
+  background: url("images/radon-logo.svg") no-repeat;
 }
 .ww-header .ww-main-nav ul {
   margin: 0.75rem 0 0;
@@ -54,7 +54,7 @@ body {
   vertical-align: middle;
   margin-right: 4px;
   margin-top: -4px;
-  background: url("/images/house-chimney-solid.svg") no-repeat;
+  background: url("images/house-chimney-solid.svg") no-repeat;
 }
 
 .ww-main {
@@ -105,7 +105,7 @@ body {
   text-indent: -999999px;
   width: 183px;
   height: 36px;
-  background: url("/images/radon-logo-white.svg") no-repeat;
+  background: url("images/radon-logo-white.svg") no-repeat;
 }
 @media (min-width: 768px) {
   .ww-footer .ww-container {

@@ -27,7 +27,7 @@ body {
             width: $ww-logo-lg;
             // max-width: 200px;
             height: calc(round($ww-logo-lg / $ratio));
-            background: url('/images/radon-logo.svg')no-repeat;
+            background: url('images/radon-logo.svg')no-repeat;
         }
     }
     .ww-main-nav {
@@ -63,7 +63,7 @@ body {
                     vertical-align: middle;
                     margin-right: 4px;
                     margin-top: -4px;
-                    background: url('/images/house-chimney-solid.svg') no-repeat;
+                    background: url('images/house-chimney-solid.svg') no-repeat;
                 }
             }
         }
@@ -125,7 +125,7 @@ body {
             width: $ww-logo-sm;
             // max-width: 200px;
             height: calc(round($ww-logo-sm / $ratio));
-            background: url('/images/radon-logo-white.svg') no-repeat;
+            background: url('images/radon-logo-white.svg') no-repeat;
         }
     }
 
